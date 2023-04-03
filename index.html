@@ -13,6 +13,33 @@
     <title>DrivenEats</title>
 </head>
 <body>
+    <div class="finalizar escondido">
+        <div class="confirmar escondido">
+            <div class="caixa-confirmacao">
+                <h4>Confirme seu pedido</h4>
+                <div class="itens-pedido">
+                    <div class="detalhe-final comida-selecionada">
+                        <p class="descricao-final"></p>
+                        <p class="valor-final"></p>
+                    </div>
+                    <div class="detalhe-final bebida-selecionada">
+                        <p class="descricao-final"></p>
+                        <p class="valor-final"></p>
+                    </div>
+                    <div class="detalhe-final sobremesa-selecionada">
+                        <p class="descricao-final"></p>
+                        <p class="valor-final"></p>
+                    </div>
+                    <div class="detalhe-final total">
+                        <p class="descricao-final">TOTAL</p>
+                        <p class="valor-final"></p>
+                    </div>
+                </div>
+                <button type="button" class="pedir" onclick="enviarMensagem()">Tudo certo, pode pedir!</button>
+                <button type="button" class="cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
+        </div>
+    </div>
     <div class="cabecalho">
         <h1>DrivenEats</h1>
         <h2>Sua comida em 6 minutos</h2>
@@ -128,7 +155,7 @@
         </div>
     </div>
     <div class="rodape">
-        <button type="button" class="selecione" disabled onclick="enviarMensagem()">Selecione os 3 itens para fechar o pedido</button>
+        <button type="button" class="selecione" disabled onclick="finalizarPedido()">Selecione os 3 itens para fechar o pedido</button>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

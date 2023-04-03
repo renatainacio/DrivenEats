@@ -149,7 +149,6 @@ h3 {
     padding: 0 20%;
 }
 
-
 .selecionado {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
@@ -162,4 +161,97 @@ h3 {
     background: #32B72F;
     font-weight: 700;
     letter-spacing: 0.018em;
+}
+
+.escondido {
+    display: none;
+}
+
+.confirmar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-confirmacao {
+    width: 377px;
+    height: 353px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caixa-confirmacao h4 {
+    width: 376px;
+    height: 27px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;   
+}
+
+.pedir {
+    width: 329px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: none;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #50D074;
+}
+
+.cancelar {
+    height: 52px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+}
+
+.itens-pedido {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.valor-final {
+    text-align: right;
+}
+
+.detalhe-final {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin-top: 13px;
+}
+
+.total {
+    font-weight: 700;
 }
