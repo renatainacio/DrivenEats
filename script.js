@@ -29,21 +29,19 @@ function selecionarItem(tipo, item) {
     }
 }
 
-function finalizarPedido() {
+
+function enviarMensagem() {
     let valorTotal;
     let precoComida = Number(document.querySelector(".comida .selecionado .preco").innerHTML.replace("R$ ", "").replace(",", "."));
     let precoBebida = Number(document.querySelector(".bebida .selecionado .preco").innerHTML.replace("R$ ", "").replace(",", "."));
     let precoSobremesa = Number(document.querySelector(".sobremesa .selecionado .preco").innerHTML.replace("R$ ", "").replace(",", "."));
     valorTotal = precoComida + precoBebida + precoSobremesa;
     valorTotal = valorTotal.toFixed(2);
-}
-
-function enviarMensagem() {
     let linkWhatsapp = "https://wa.me/5511996389499?text=";
-    let prato = document.querySelector(".comida-selecionada .descricao-final").innerHTML;
-    let bebida = document.querySelector(".bebida-selecionada .descricao-final").innerHTML;
-    let sobremesa = document.querySelector(".sobremesa-selecionada .descricao-final").innerHTML;
-    let total = document.querySelector(".total .valor-final").innerHTML ;
+    let prato = document.querySelector(".comida .selecionado .nome").innerHTML;
+    let bebida = document.querySelector(".bebida .selecionado .nome").innerHTML;
+    let sobremesa = document.querySelector(".sobremesa .selecionado .nome").innerHTML;
+    let total = valorTotal ;
     linkWhatsapp = linkWhatsapp + encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: ${total}\n`);
     window.location = linkWhatsapp;
 }
