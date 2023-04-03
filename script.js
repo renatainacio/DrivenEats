@@ -52,7 +52,7 @@ function cancelar() {
 
 function enviarMensagem() {
     let nome = prompt("Qual o seu nome?");
-    let endereco = prompt("Qual o seu endereco?");
+    let endereco = prompt("Qual o seu endereço?");
     let linkWhatsapp = "https://wa.me/5511999651992?text=";
     let prato = document.querySelector(".comida-selecionada .descricao-final").innerHTML;
     let bebida = document.querySelector(".bebida-selecionada .descricao-final").innerHTML;
